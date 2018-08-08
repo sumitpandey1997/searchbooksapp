@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    tools:context="com.example.user.searchbooks.loginactivity">
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tvo"
+            android:textSize="20dp"
+            android:layout_marginLeft="250dp"
+            android:alpha="0.9"
+            android:text="serach books"
+            android:textColor="#000"
+            android:textStyle="italic|bold"
+            />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tvo"
+            android:layout_marginTop="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tvv"
+            android:background="#c0c0c0" />
+
+        <TextView
+            android:id="@+id/tvv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="LOGIN "
+            android:layout_below="@+id/tvo"
+            android:textSize="40dp"
+            android:textStyle="italic|bold"
+            android:textColor="#000" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_below="@+id/tvo"
+            android:layout_marginTop="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tvv"
+            android:background="#c0c0c0" />
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:id="@+id/ll"
+                android:layout_marginTop="130dp"
+                android:orientation="vertical"
+                >
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/til"
+                    android:layout_below="@+id/FNameLayout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="email id"
+                        android:textColorHint="#000"
+                        android:layout_marginTop="120dp"
+                        android:inputType="textPersonName"
+                        android:ems="20"
+                        android:textColor="#000"
+                        android:background="@drawable/border"
+                        android:id="@+id/ete"
+                        />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/til2"
+                    android:layout_below="@+id/FNameLayout"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp">
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="password"
+                        android:textColor="#000"
+                        android:ems="20"
+                        android:background="@drawable/border"
+                        android:textColorHint="#000"
+                        android:id="@+id/etp"
+                        />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:id="@+id/btn1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient"
+            android:layout_below="@+id/ll"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="LOGIN"
+            android:textColor="#f73"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not a member sign_up ?"
+            android:id="@+id/singuptv"
+            android:layout_below="@+id/btn1"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_below="@+id/singuptv"
+            android:layout_marginTop="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/tvor"
+            android:background="#c0c0c0" />
+        <TextView
+            android:id="@+id/tvor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/singuptv"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="30dp"
+            android:layout_toStartOf="@+id/imageView2"
+            android:text=" OR WITH "
+            android:textColor="#000"
+            android:textSize="30dp" />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:layout_below="@+id/singuptv"
+            android:layout_marginTop="50dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tvor"
+            android:background="#c0c0c0" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imv"
+            android:layout_below="@+id/tvor"
+            android:src="@drawable/facebook"
+            android:layout_marginLeft="40dp"
+            android:layout_alignParentBottom="true"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvor"
+            android:layout_toRightOf="@+id/imv"
+            android:layout_marginRight="30dp"
+            android:src="@drawable/gmail"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/imageView2" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

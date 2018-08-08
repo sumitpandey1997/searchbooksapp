@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context="com.example.user.searchbooks.addbook">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvadd"
+                android:text="ADD_BOOK_HERE"
+                android:layout_marginLeft="60dp"
+                android:textColor="#f73"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv1"
+                android:layout_marginTop="20dp"
+                android:text="book name"
+                android:textColor="#c0c0c0"
+                android:textSize="20dp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#c0c0c0"
+                android:padding="5dp"
+                android:background="@drawable/border"
+                android:id="@+id/et1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv2"
+                android:textSize="20dp"
+                android:textColor="#c0c0c0"
+                android:text="Author name"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#c0c0c0"
+                android:padding="5dp"
+                android:background="@drawable/border"
+                android:id="@+id/et2"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv3"
+                android:textColor="#c0c0c0"
+                android:textSize="20dp"
+                android:text="prize(in RS)"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#c0c0c0"
+                android:padding="5dp"
+                android:background="@drawable/border"
+                android:id="@+id/et3"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv4"
+                android:textColor="#c0c0c0"
+                android:textSize="20dp"
+                android:text="discription"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:textColor="#c0c0c0"
+                android:padding="5dp"
+                android:background="@drawable/border"
+                android:inputType="textMultiLine"
+                android:id="@+id/et4"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv5"
+                android:textColor="#c0c0c0"
+                android:textSize="20dp"
+                android:text="seller contact no"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:textColor="#c0c0c0"
+                android:padding="5dp"
+                android:background="@drawable/border"
+                android:inputType="textMultiLine"
+                android:id="@+id/et5"/>
+
+            <Button
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="upload images"
+                 android:layout_marginTop="15dp"
+                 android:layout_marginLeft="135dp"
+                 android:background="@drawable/gradient"
+                 android:id="@+id/btn3"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/btn"
+                android:text="ADD BOOK"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="#c73"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recylerview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
